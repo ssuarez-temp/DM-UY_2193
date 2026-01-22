@@ -6,7 +6,7 @@
 
 ---
 
-## ingredients
+## Ingredients
 
 1. Apple
 
