@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas de Valparaíso</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="left-area">
+                <a class="title" href="index.html">Casas de Valparaíso</a>
+                <form class="search-area" action="../js/search.js" method="GET">
+                    <input type="text" name="q" placeholder="Search..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="right-area">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <!-- <li><a href="gallery.html">Galería</a></li> -->
+                        <li><a href="history.html">Historia</a></li>
+                        <li><a href="culture.html">Cultura</a></li>
+                        <li><a href="geography.html">Geografía</a></li>
+                        <li><a href="transportation.html">Transporte</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="login.html">Entrar</a></li>
+                    </ul>
+                </nav>
+                <div class="language">
+                    <select onchange="changeLanguage(this.value)">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="left-column">
+            <h1>Actualizaciones</h1>
+            <div class="news-container">
+                <ul>
+                    <li>
+                        <h3>📰 Noticia</h3>
+                        <p><small>14/01/2026 13:00 hrs</small></p>
+                        <p><a href="gallery.html">Galería</a>: Se agregaron algunas fotografías de comienzos de los 70s.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>📅 Hoy en la historia</h3>
+                        <p><small>11/09/2025 00:00 hrs</small></p>
+                        <p>El <a href="history/golpe-de-estado-1973.html">11 de septiembre de 1973</a>, se produjo un
+                            golpe de Estado en
+                            Chile.</p>
+                        <p>Pinochet llegó al poder; durante su mandato, hasta 80.000 personas fueron encarceladas o
+                            desaparecidas
+                            y 3.000 fueron ejecutadas.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>📕 Libros</h3>
+                        <p><small>05/02/2025 14:01 hrs</small></p>
+                        <p>Lanzamiento de <a href="wiki/hernan-gomez-larenas.html">Hernán Gómez</a>: <em>Crónica de una
+                                vida dedicada al conjunto Quilapayún</em></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>Bienvenidos a <i>Casas de Valparaíso</i></h1>
+            <div class="carousel">
+                <a href="administrative-divisions/valparaiso.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Valparaiso._Unsplash_H6KJ2D0LphU.jpg"
+                        alt="Valparaiso, Chile">
+                </a>
+            </div>
+            <h2>Destacamos</h2>
+            <div class="right-grid">
+                <div class="polaroid">
+                    <span class="polaroid-header">
+                        <p>Historia</p>
+                        <a class="polaroid-more" href="history.html">ver más...</a>
+                    </span>
+                    <a href="history/golpe-de-estado-1973.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Golpe_de_Estado_1973.jpg"
+                            alt="Golpe de Estado del 11 de septiembre de 1973">
+                    </a>
+                </div>
+                <div class="polaroid">
+                    <span class="polaroid-header">
+                        <p>Cultura</p>
+                        <a class="polaroid-more" href="culture.html">ver más...</a>
+                    </span>
+                    <a href="culture/cueca.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Parada_Militar_2014_%2815288868721%29.jpg"
+                            alt="Parada Militar 2014">
+                    </a>
+                </div>
+                <div class="polaroid">
+                    <span class="polaroid-header">
+                        <p>Geografía</p>
+                        <a class="polaroid-more" href="geography.html">ver más...</a>
+                    </span>
+                    <a href="geography/punta-arenas.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/1983-12_patagonien_03.jpg"
+                            alt="Impressions from Patagonia in 1983, Punta Arenas, view from Magellan Strait">
+                    </a>
+                </div>
+                <div class="polaroid">
+                    <span class="polaroid-header">
+                        <p>Transporte</p>
+                        <a class="polaroid-more" href="transportation.html">ver más...</a>
+                    </span>
+                    <a href="transportation/limache-puerto.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Estaci%C3%B3n_Portales%2C_Valpara%C3%ADso_20200120_86.jpg"
+                            alt="Estación Portales, Valparaíso">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="contact.html">Contacto</a>
+            |
+            <a href="about.html">Acerca</a>
+            |
+            <a href="policy.html">Política</a>
+            |
+            <a href="terms.html">Términos</a>
+            |
+            <a href="license.html">Licencia</a>
+        </div>
+        <!-- <div class="license">
+            <p>
+                Fondo — Fuente de la imagen:
+                <a href="https://web.archive.org/web/20161014042921/http://www.panoramio.com/photo/29844894"
+                    target="_blank">
+                    Valparaiso Port
+                </a>
+                Licencia:
+                <a href="https://creativecommons.org/licenses/by/3.0/deed.en" target="_blank">
+                    CC BY 3.0
+                </a>
+            </p>
+            <p>
+                Historia — Fuente de la imagen:
+                <a href="https://commons.wikimedia.org/wiki/File:Golpe_de_Estado_1973.jpg" target="_blank">
+                    Golpe de Estado del 11 de septiembre de 1973
+                </a>
+                Licencia:
+                <a href="https://creativecommons.org/licenses/by/3.0/cl/deed.en" target="_blank">
+                    CC BY 3.0 CL
+                </a>
+            </p>
+            <p>
+                Cultura — Fuente de la imagen:
+                <a href="https://www.flickr.com/photos/secretaria_general_de_gobierno/15288868721/" target="_blank">
+                    Parada Militar 2014
+                </a>
+                Licencia:
+                <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en" target="_blank">
+                    CC BY-SA 2.0
+                </a>
+            </p>
+            <p>
+                Geografía — Fuente de la imagen:
+                <a href="https://commons.wikimedia.org/wiki/File:1983-12_patagonien_03.jpg" target="_blank">
+                    Impressions from Patagonia in 1983, Punta Arenas, view from Magellan Strait
+                </a>
+                Licencia:
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">
+                    CC BY-SA 4.0
+                </a>
+            </p>
+            <p>
+                Transporte — Fuente de la imagen:
+                <a href="https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Portales,_Valpara%C3%ADso_20200120_86.jpg"
+                    target="_blank">
+                    Estación Portales, Valparaíso
+                </a>
+                Licencia:
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">
+                    CC BY-SA 4.0
+                </a>
+            </p>
+        </div> -->
+        <div class="copyright">© 2026 Casas de Valparaíso</div>
+
+
+    </footer>
+    <script src="../js/language.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>

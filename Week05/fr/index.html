@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisons de Valparaíso</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="top-bar">
+
+            <div class="left-area">
+
+                <div class="title">Maisons de Valparaíso</div>
+
+                <form class="search-area" action="../js/search.js" method="GET">
+
+                    <input type="text" name="q" placeholder="Search..." required>
+
+                    <button type="submit">Rechercher</button>
+
+                </form>
+
+            </div>
+
+            <div class="right-area">
+
+                <nav>
+
+                    <ul>
+
+                        <li><a href="index.html">Accueil</a></li>
+
+                        <li><a href="gallery.html">Galerie</a></li>
+
+                        <li><a href="login.html">Connexion</a></li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="language">
+
+                    <select onchange="changeLanguage(this.value)">
+
+                        <option value="es">ES</option>
+
+                        <option value="en">EN</option>
+
+                        <option value="fr">FR</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="container">
+
+        <div class="house red">
+            <div class="roof"></div>
+            <div class="body"></div>
+            <div class="window"></div>
+        </div>
+
+        <div class="house blue">
+            <div class="roof"></div>
+            <div class="body"></div>
+            <div class="window"></div>
+        </div>
+
+        <div class="house yellow">
+            <div class="roof"></div>
+            <div class="body"></div>
+            <div class="window"></div>
+        </div>
+
+        <div class="house green">
+            <div class="roof"></div>
+            <div class="body"></div>
+            <div class="window"></div>
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <div class="footer-links">
+
+            <a href="contact.html">Contact</a>
+
+            <a href="about.html">À propos</a>
+
+            <a href="policy.html">Politique</a>
+
+            <a href="terms.html">Conditions</a>
+
+        </div>
+
+        <div class="license">
+
+            <p>
+                Fond — Source de l'image :
+                <a href="https://web.archive.org/web/20161014042921/http://www.panoramio.com/photo/29844894"
+                    target="_blank">
+                    Valparaiso Port
+                </a>
+                Licence :
+                <a href="https://creativecommons.org/licenses/by/3.0/deed.en" target="_blank">
+                    CC BY 3.0
+                </a>
+            </p>
+
+
+        </div>
+
+    </footer>
+
+    <script src="../js/language.js"></script>
+
+    <script src="../js/search.js"></script>
+
+</body>
+
+</html>
