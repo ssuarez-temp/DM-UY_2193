@@ -541,6 +541,7 @@ body.dark-mode .next:hover {
     color: #fff;
 }
 
-body.dark-mode .news-container li:last-child {
+body.dark-mode .news-container li:last-child,
+body.dark-mode .license-container li:last-child {
     border-bottom: none;
 }
