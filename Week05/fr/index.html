@@ -10,63 +10,45 @@
     <link rel="stylesheet" href="../css/components.css">
 </head>
 
-
 <body>
-
     <header>
-
         <div class="top-bar">
-
             <div class="left-area">
-
-                <div class="title">Maisons de Valparaíso</div>
-
+                <a class="title" href="index.html">Maisons de Valparaíso</a>
                 <form class="search-area" action="../js/search.js" method="GET">
-
                     <input type="text" name="q" placeholder="Search..." required>
-
                     <button type="submit">Rechercher</button>
-
                 </form>
-
+                <button id="dark-toggle">🌙</button>
             </div>
-
             <div class="right-area">
-
-                <nav>
-
-                    <ul>
-
-                        <li><a href="index.html">Accueil</a></li>
-
-                        <li><a href="gallery.html">Galerie</a></li>
-
-                        <li><a href="login.html">Connexion</a></li>
-
-                    </ul>
-
-                </nav>
-
-                <div class="language">
-
-                    <select onchange="changeLanguage(this.value)">
-
-                        <option value="es">ES</option>
-
-                        <option value="en">EN</option>
-
-                        <option value="fr">FR</option>
-
-                    </select>
-
+                <span class="hamburger-btn">
+                    &#8801;
+                </span>
+                <div class="nav-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="history.html">Histoire</a></li>
+                            <li><a href="gallery.html">Galerie</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="login.html">Connexion</a></li>
+                        </ul>
+                    </nav>
+                    <div class="language">
+                        <select onchange="changeLanguage(this.value)">
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                            <option value="fr" selected>FR</option>
+                        </select>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-
     </header>
-
 
     <div class="container">
 
@@ -96,23 +78,21 @@
 
     </div>
 
-
     <footer>
 
         <div class="footer-links">
-
             <a href="contact.html">Contact</a>
-
+            |
             <a href="about.html">À propos</a>
-
+            |
             <a href="policy.html">Politique</a>
-
+            |
             <a href="terms.html">Conditions</a>
-
+            |
+            <a href="license.html">Licence</a>
         </div>
 
-        <div class="license">
-
+        <!-- <div class="license">
             <p>
                 Fond — Source de l'image :
                 <a href="https://web.archive.org/web/20161014042921/http://www.panoramio.com/photo/29844894"
@@ -125,14 +105,14 @@
                 </a>
             </p>
 
-
-        </div>
-
+        </div> -->
+        <div class="copyright">&copy; 2026 Maisons de Valparaíso</div>
     </footer>
 
+    <script src="../js/nightmode.js"></script>
     <script src="../js/language.js"></script>
-
     <script src="../js/search.js"></script>
+    <script src="../js/carousel.js"></script>
 
 </body>
 

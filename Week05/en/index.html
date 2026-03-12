@@ -11,61 +11,44 @@
 </head>
 
 <body>
-
     <header>
-
         <div class="top-bar">
-
             <div class="left-area">
-
-                <div class="title">Casas de Valparaíso</div>
-
+                <a class="title" href="index.html">Casas de Valparaíso</a>
                 <form class="search-area" action="../js/search.js" method="GET">
-
                     <input type="text" name="q" placeholder="Search..." required>
-
                     <button type="submit">Search</button>
-
                 </form>
-
+                <button id="dark-toggle">🌙</button>
             </div>
-
             <div class="right-area">
-
-                <nav>
-
-                    <ul>
-
-                        <li><a href="index.html">Home</a></li>
-
-                        <li><a href="gallery.html">Gallery</a></li>
-
-                        <li><a href="login.html">Login</a></li>
-
-                    </ul>
-
-                </nav>
-
-                <div class="language">
-
-                    <select onchange="changeLanguage(this.value)">
-
-                        <option value="es">ES</option>
-
-                        <option value="en">EN</option>
-
-                        <option value="fr">FR</option>
-
-                    </select>
-
+                <span class="hamburger-btn">
+                    &#8801;
+                </span>
+                <div class="nav-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </nav>
+                    <div class="language">
+                        <select onchange="changeLanguage(this.value)">
+                            <option value="es">ES</option>
+                            <option value="en" selected>EN</option>
+                            <option value="fr">FR</option>
+                        </select>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-
     </header>
-
 
     <div class="container">
 
@@ -95,23 +78,21 @@
 
     </div>
 
-
     <footer>
 
         <div class="footer-links">
-
             <a href="contact.html">Contact</a>
-
+            |
             <a href="about.html">About</a>
-
+            |
             <a href="policy.html">Policy</a>
-
+            |
             <a href="terms.html">Terms</a>
-
+            |
+            <a href="license.html">License</a>
         </div>
 
-        <div class="license">
-
+        <!-- <div class="license">
             <p>
                 Background — Image source:
                 <a href="https://web.archive.org/web/20161014042921/http://www.panoramio.com/photo/29844894"
@@ -123,15 +104,15 @@
                     CC BY 3.0
                 </a>
             </p>
+        </div> -->
 
-
-        </div>
-
+        <div class="copyright">&copy; 2026 Casas de Valparaíso</div>
     </footer>
 
+    <script src="../js/nightmode.js"></script>
     <script src="../js/language.js"></script>
-
     <script src="../js/search.js"></script>
+    <script src="../js/carousel.js"></script>
 
 </body>
 

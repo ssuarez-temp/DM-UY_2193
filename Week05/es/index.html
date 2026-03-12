@@ -19,6 +19,7 @@
                     <input type="text" name="q" placeholder="Search..." required>
                     <button type="submit">Buscar</button>
                 </form>
+                <button id="dark-toggle">🌙</button>
             </div>
             <div class="right-area">
                 <span class="hamburger-btn">
@@ -28,11 +29,13 @@
                     <nav>
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
-                            <!-- <li><a href="gallery.html">Galería</a></li> -->
+                            <li><a href="news.html">Noticias</a></li>
+                            <li><a href="explore.html">Explorar</a></li>
+                            <li><a href="gallery.html">Galería</a></li>
                             <li><a href="history.html">Historia</a></li>
-                            <li><a href="culture.html">Cultura</a></li>
-                            <li><a href="geography.html">Geografía</a></li>
-                            <li><a href="transportation.html">Transporte</a></li>
+                            <!-- <li><a href="culture.html">Cultura</a></li> -->
+                            <!-- <li><a href="geography.html">Geografía</a></li> -->
+                            <!-- <li><a href="transportation.html">Transporte</a></li> -->
                         </ul>
                     </nav>
                     <nav>
@@ -57,13 +60,13 @@
             <div class="news-container">
                 <ul>
                     <li>
-                        <h3>📰 Noticia</h3>
+                        <h3>📰 <a href="news.html">Noticia</a></h3>
                         <p><small>14/01/2026 13:00 hrs</small></p>
                         <p><a href="gallery.html">Galería</a>: Se agregaron algunas fotografías de comienzos de los 70s.
                         </p>
                     </li>
                     <li>
-                        <h3>📅 Hoy en la historia</h3>
+                        <h3>📅 <a href="history/today-in-history.html">Hoy en la historia</a></h3>
                         <p><small>11/09/2025 00:00 hrs</small></p>
                         <p>El <a href="history/golpe-de-estado-1973.html">11 de septiembre de 1973</a>, se produjo un
                             golpe de Estado en
@@ -74,10 +77,13 @@
                         </p>
                     </li>
                     <li>
-                        <h3>📕 Libros</h3>
+                        <h3>📕 <a href="books.html">Libros</a></h3>
                         <p><small>05/02/2025 14:01 hrs</small></p>
                         <p>Lanzamiento de <a href="wiki/hernan-gomez-larenas.html">Hernán Gómez</a>: <em>Crónica de una
                                 vida dedicada al conjunto Quilapayún</em></p>
+                    </li>
+                    <li>
+                        <h3 style="text-align: center; font-size: 0.8em;"><a href="novedades.php">Más...</a></h3>
                     </li>
                 </ul>
             </div>
@@ -90,10 +96,22 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Valparaiso._Unsplash_H6KJ2D0LphU.jpg"
                             alt="Valparaiso, Chile">
                     </a>
-                    <a href="music/quilapayun.html" class="slide">
+                    <a href="economics/catering.html" class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/McDonalds._Valparaiso%2C_Chile.jpg"
+                            alt="Yes, McDonalds. Valparaiso, Chile">
+                    </a>
+                    <a href="history/mining.html" class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Humberstone.jpg"
+                            alt="Old factory buildings in the abandoned city of Humberstone, Chile">
+                    </a>
+                    <a href="history/unidad-popular.html" class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Allende_supporters.jpg"
+                            alt="Manifestació de partidaris de Salvador Allende a Santiago de Chile">
+                    </a>
+                    <!-- <a href="music/quilapayun.html" class="slide">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Indio_Juan_y_Quilapay%C3%BAn%2C_Santander%2C_1979.jpg"
                             alt="Indio Juan. Rueda de prensa junto a Quilapayún en Santander, España, 1979.">
-                    </a>
+                    </a> -->
                 </div>
                 <button class="prev">‹</button>
                 <button class="next">›</button>
@@ -209,10 +227,11 @@
                 </a>
             </p>
         </div> -->
-        <div class="copyright">© 2026 Casas de Valparaíso</div>
+        <div class="copyright">&copy; 2026 Casas de Valparaíso</div>
 
 
     </footer>
+    <script src="../js/nightmode.js"></script>
     <script src="../js/language.js"></script>
     <script src="../js/search.js"></script>
     <script src="../js/carousel.js"></script>

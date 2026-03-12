@@ -85,6 +85,9 @@ footer a:hover {
     width: 150px;
     height: 120px;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);

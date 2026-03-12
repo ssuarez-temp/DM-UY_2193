@@ -1,22 +1,18 @@
-function changeLanguage(lang) {
-    var path = window.location.pathname;
-    var match = path.match(/\/(es|en|fr)\//);
-    var currentLang = match ? match[1] : 'es';
+function getCurrentLang() {
+    const match = window.location.pathname.match(/\/(es|en|fr)\//);
+    return match ? match[1] : 'es';
+}
 
-    if (lang === currentLang) {
-        window.location.reload();
+function changeLanguage(lang) {
+    const currentLang = getCurrentLang();
+    if (lang !== currentLang) {
+        window.location.href = window.location.pathname.replace(`/${currentLang}/`, `/${lang}/`);
     } else {
-        var newPath = path.replace(new RegExp("/" + currentLang + "/"), "/" + lang + "/");
-        window.location.href = newPath;
+        window.location.reload();
     }
 }
 
-window.addEventListener('DOMContentLoaded', function() {
-    var path = window.location.pathname;
-    var match = path.match(/\/(es|en|fr)\//);
-    var currentLang = match ? match[1] : 'es';
-    var select = document.querySelector('.language select');
-    if (select) {
-        select.value = currentLang;
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    const select = document.querySelector('.language select');
+    if (select) select.value = getCurrentLang();
 });
