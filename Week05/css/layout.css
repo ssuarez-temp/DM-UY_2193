@@ -166,6 +166,7 @@ header {
     background: rgba(255, 255, 255, 0.8);
     padding: 25px;
     border-radius: 12px;
+    margin-bottom: 80px;
 }
 
 .contact-container input,
