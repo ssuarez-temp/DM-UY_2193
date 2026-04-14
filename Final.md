@@ -34,7 +34,7 @@
 
 #### // JavaScript static search
 
-#### Bootstrap:
+#### // Bootstrap:
 
 <ul>
     <li>Navbar</li>
