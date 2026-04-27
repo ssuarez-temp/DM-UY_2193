@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/7/77/Valparaiso_Port_-_panoramio.jpg") no-repeat center 30% fixed;
+    background-size: cover;
+
+    filter: blur(4px) brightness(0.75);
+    transition: all 0.3s ease;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: -1;
+}
+
+body.dark-mode::before {
+    filter: blur(4px) brightness(0.5);
+}
+
+a {
+    color: inherit;
+}
+
+select,
+input,
+button {
+    font-family: inherit;
+}

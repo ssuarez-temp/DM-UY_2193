@@ -1,0 +1,43 @@
+<header>
+    <div class="top-bar">
+        <div class="left-area">
+            <a class="title" href="index.html" data-i18n="nav_title">Casas de Valparaíso</a>
+            <form class="search-area" action="js/search.js" method="GET">
+                <input type="text" name="q" placeholder="Search..." required>
+                <button type="submit" data-i18n="btn_search">Buscar</button>
+            </form>
+            <button id="dark-toggle">🌙</button>
+        </div>
+        <div class="right-area">
+            <span class="hamburger-btn">
+                &#8801;
+            </span>
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                        <li><a href="news.html" data-i18n="nav_news">Noticias</a></li>
+                        <li><a href="gallery.html" data-i18n="nav_gallery">Galería</a></li>
+                        <li><a href="culture.html" data-i18n="nav_culture">Cultura</a></li>
+                        <li><a href="history.html" data-i18n="nav_history">Historia</a></li>
+                        <!-- <li><a href="explore.html">Explorar</a></li> -->
+                        <!-- <li><a href="geography.html">Geografía</a></li> -->
+                        <!-- <li><a href="transportation.html">Transporte</a></li> -->
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="login.html" id="auth-btn" data-i18n="btn_login">Entrar</a></li>
+                    </ul>
+                </nav>
+                <div class="language">
+                    <select id="lang-selector">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
