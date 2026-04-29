@@ -4,63 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contacto</title>
-
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/components.css">
-
+    <title data-i18n="title-contact">Contacto</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 
 <body>
-
-    <header>
-        <div class="top-bar">
-            <div class="left-area">
-                <a class="title" href="index.html">Casas de Valparaíso</a>
-                <form class="search-area" action="../js/search.js" method="GET">
-                    <input type="text" name="q" placeholder="Search..." required>
-                    <button type="submit">Buscar</button>
-                </form>
-                <button id="dark-toggle">🌙</button>
-            </div>
-            <div class="right-area">
-                <span class="hamburger-btn">
-                    &#8801;
-                </span>
-                <div class="nav-bar">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="news.html">Noticias</a></li>
-                            <li><a href="explore.html">Explorar</a></li>
-                            <li><a href="gallery.html">Galería</a></li>
-                            <li><a href="history.html">Historia</a></li>
-                            <!-- <li><a href="culture.html">Cultura</a></li> -->
-                            <!-- <li><a href="geography.html">Geografía</a></li> -->
-                            <!-- <li><a href="transportation.html">Transporte</a></li> -->
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul>
-                            <li><a href="login.html">Entrar</a></li>
-                        </ul>
-                    </nav>
-                    <div class="language">
-                        <select onchange="changeLanguage(this.value)">
-                            <option value="es">ES</option>
-                            <option value="en">EN</option>
-                            <option value="fr">FR</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    <div id="header-placeholder"></div>
     <div class="title-main">
-        <h1>Contacto</h1>
+        <h1 data-i18n="contact">Contacto</h1>
     </div>
 
     <div class="contact-container">
@@ -71,36 +24,26 @@
             <input type="hidden" name="_redirect" value="thanks.html">
             <input type="text" name="_gotcha" style="display:none">
 
-            <label>Nombre</label>
+            <label data-i18n="contact_name">Nombre</label>
             <input type="text" name="name" required>
 
-            <label>Email</label>
+            <label data-i18n="contact_email">Email</label>
             <input type="email" name="email" required>
 
-            <label>Mensaje</label>
-            <textarea name="message" rows="10" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <label data-i18n="contact_message">Mensaje</label>
+            <textarea name="message" rows="10" placeholder="Write your message here..." required></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" data-i18n="sumbit">Enviar</button>
 
         </form>
 
     </div>
 
-    <footer>
-        <div class="footer-links">
-            <a href="contact.html">Contacto</a> |
-            <a href="about.html">Acerca</a> |
-            <a href="policy.html">Política</a> |
-            <a href="terms.html">Términos</a> |
-            <a href="license.html">Licencia</a>
-        </div>
-        <div class="copyright">
-            &copy; 2026 Casas de Valparaíso
-        </div>
-    </footer>
-    <script src="../js/nightmode.js"></script>
-    <script src="../js/language.js"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/carousel.js"></script>
+    <div id="footer-placeholder"></div>
+
+    <script src="js/nightmode.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/components-loader.js"></script>
 
 </body>

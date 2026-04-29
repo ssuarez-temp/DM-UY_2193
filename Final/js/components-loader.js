@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const response = await fetch(`locals/${lang}.json`);
             if (!response.ok) throw new Error("Dictionary not found");
             translations = await response.json();
+
+            document.documentElement.lang = lang;
             
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');

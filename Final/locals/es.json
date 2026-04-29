@@ -1,4 +1,7 @@
 {
+    "title-main": "Página de inicio de Casas de Valparaíso",
+    "title-contact": "Contacto",
+    "title-license": "Licencia",
     "nav_title": "Casas de Valparaíso",
     "nav_home": "Inicio",
     "nav_news": "Noticias",
@@ -8,5 +11,17 @@
     "btn_login": "Entrar",
     "btn_logout": "Salir",
     "hp_title": "Bienvenidos a Casas de Valparaíso",
-    "btn_search": "Buscar"
+    "btn_search": "Buscar",
+    "footer-contact": "Contacto",
+    "footer-about": "Acerca",
+    "footer-policy": "Política",
+    "footer-terms": "Términos",
+    "footer-license": "Licencia",
+    "copyright": "© 2026 Casas de Valparaíso",
+    "submit": "Enviar",
+    "contact": "Contacto",
+    "contact_name": "Nombre",
+    "contact_email": "Email",
+    "contact_message": "Mensaje",
+    "license": "Licencia"
 }

@@ -4,63 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Licencias</title>
-
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/components.css">
-
+    <title data-i18n="title-license">Licencias</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 
 <body>
-
-    <header>
-        <div class="top-bar">
-            <div class="left-area">
-                <a class="title" href="index.html">Casas de Valparaíso</a>
-                <form class="search-area" action="../js/search.js" method="GET">
-                    <input type="text" name="q" placeholder="Search..." required>
-                    <button type="submit">Buscar</button>
-                </form>
-                <button id="dark-toggle">🌙</button>
-            </div>
-            <div class="right-area">
-                <span class="hamburger-btn">
-                    &#8801;
-                </span>
-                <div class="nav-bar">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="news.html">Noticias</a></li>
-                            <li><a href="explore.html">Explorar</a></li>
-                            <li><a href="gallery.html">Galería</a></li>
-                            <li><a href="history.html">Historia</a></li>
-                            <!-- <li><a href="culture.html">Cultura</a></li> -->
-                            <!-- <li><a href="geography.html">Geografía</a></li> -->
-                            <!-- <li><a href="transportation.html">Transporte</a></li> -->
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul>
-                            <li><a href="login.html">Entrar</a></li>
-                        </ul>
-                    </nav>
-                    <div class="language">
-                        <select onchange="changeLanguage(this.value)">
-                            <option value="es">ES</option>
-                            <option value="en">EN</option>
-                            <option value="fr">FR</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <div class="title-main">
-        <h1>Licencia</h1>
+        <h1 data-i18n="license">Licencia</h1>
     </div>
 
     <div class="license-container">
@@ -69,11 +23,12 @@
             <li>
                 <p>
                     <strong>Valparaiso Port</strong><br>
-                    Fuente:
+                    <span data-i18n="source">Fuente</span>:
                     <a href="https://web.archive.org/web/20161014042921/http://www.panoramio.com/photo/29844894">
                         panoramio.com (enlace archivado)
                     </a><br>
-                    Licencia: <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
+                    <span data-i18n="license">Licencia</span>:
+                    <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
                 </p>
             </li>
 
@@ -183,23 +138,12 @@
         </ul>
     </div>
 
-    <footer>
-        <div class="footer-links">
-            <a href="contact.html">Contacto</a> |
-            <a href="about.html">Acerca</a> |
-            <a href="policy.html">Política</a> |
-            <a href="terms.html">Términos</a> |
-            <a href="license.html">Licencia</a>
-        </div>
-        <div class="copyright">
-            &copy; 2026 Casas de Valparaíso
-        </div>
-    </footer>
-    <script src="../js/nightmode.js"></script>
-    <script src="../js/language.js"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/carousel.js"></script>
+    <div id="footer-placeholder"></div>
 
+    <script src="js/nightmode.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/components-loader.js"></script>
 </body>
 
 </html>
