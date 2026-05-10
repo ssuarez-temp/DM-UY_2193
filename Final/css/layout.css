@@ -715,3 +715,68 @@ body.dark-mode .info-sublist {
     content: "• ";
     color: #888;
 }
+
+.catalog-container {
+    max-width: 1200px;
+    margin: 120px auto 60px auto;
+    padding: 0 20px;
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.catalog-header h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.catalog-card {
+    background: rgba(252, 252, 252, 0.85);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-card-title {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.catalog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+body.dark-mode .catalog-card {
+    background: rgba(40, 40, 40, 0.9);
+}
+
+body.dark-mode .catalog-card-title {
+    color: #f0f0f0;
+}
