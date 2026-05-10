@@ -547,3 +547,171 @@ body.dark-mode .news-container li:last-child,
 body.dark-mode .license-container li:last-child {
     border-bottom: none;
 }
+
+.wiki-container {
+    max-width: 1200px;
+    margin: 120px auto 60px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 45px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+body.dark-mode .wiki-container {
+    background: rgba(30, 30, 30, 0.95);
+    color: #f0f0f0;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.breadcrumb li::after {
+    content: "/";
+    margin-left: 10px;
+    color: #888;
+}
+
+.breadcrumb li:last-child::after {
+    content: "";
+}
+
+.breadcrumb a {
+    color: #0039a6;
+    text-decoration: none;
+}
+
+body.dark-mode .breadcrumb a {
+    color: #4dabf7;
+}
+
+.wiki-header {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+}
+
+body.dark-mode .wiki-header {
+    border-bottom-color: #444;
+}
+
+.wiki-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.wiki-header p {
+    font-style: italic;
+    color: #666;
+}
+
+body.dark-mode .wiki-header p {
+    color: #aaa;
+}
+
+.wiki-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .wiki-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.content-section {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.content-section h2 {
+    margin: 30px 0 15px 0;
+    font-size: 1.5rem;
+}
+
+.wiki-note {
+    background: #e7f1ff;
+    border-left: 5px solid #0d6efd;
+    padding: 15px 20px;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+body.dark-mode .wiki-note {
+    background: #1a2635;
+    border-left-color: #4dabf7;
+}
+
+.infobox {
+    border: 1px solid #ddd;
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+body.dark-mode .infobox {
+    background: #252525;
+    border-color: #444;
+}
+
+.infobox h5 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.sidebar-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.info-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+body.dark-mode .info-table th,
+body.dark-mode .info-table td {
+    border-bottom-color: #444;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.info-sublist {
+    list-style: none;
+    padding-left: 12px;
+    margin-top: 4px;
+    border-left: 2px solid #ccc;
+}
+
+body.dark-mode .info-sublist {
+    border-left-color: #555;
+}
+
+.info-sublist li::before {
+    content: "• ";
+    color: #888;
+}
